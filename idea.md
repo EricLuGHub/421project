@@ -9,7 +9,7 @@ I will list them below:
 
 I've stripped some ideas to focus more on the "social network idea" from the assignment specifications.
 
-very rough draft, please review it, -- i am quite unsure of the relationshipso
+very rough draft, please review it, -- i am quite unsure of the relationships
 
 Mountaineer Social Network
 
