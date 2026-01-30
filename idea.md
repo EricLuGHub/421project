@@ -4,7 +4,8 @@
 
 In order to comply with the A1 criteria (mostly the size cap for the amount of entities), I've made some simplifications from the original idea.
 I will list them below:
-- 
+- removed the ISA relationships and the volcano and cliff
+- didnt add the gear and certification
 
 
 I've stripped some ideas to focus more on the "social network idea" from the assignment specifications.
