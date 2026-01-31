@@ -10,12 +10,14 @@ My notes include info about why certain features are included. This info should 
 
 ![alt text](image.png)
 
-
-* A climber is a generic user of the app. They go on climbs, sometimes as part of a roped party, post about their climbs.
+* A climber is a generic user of the app. They ascend mountains, sometimes as part of a roped party, post about their climbs.
   * a climber can follow other climbers on the app to be notified of their new climbs
 
-* a roped party is a combination of two or more climbers (typically at most 6, but nothing prevents more people) that connect themselves via an alpine rope. This is typically done for any travels across exposed terrain that does not require special technique (i.e. no climbing). The rope allows to prevent terrain-related dangers like crevaces, cornice breaks, ice bridges, unstable slopes.
+* a roped party is a combination of two or more climbers (typically at most 6, but nothing prevents more people) that connect themselves via an alpine rope. This is typically done for any travels across exposed terrain that requires protection (e.g. in case someone falls in a crevace) or assistance (e.g. rock climbing).
   * a roped party has at mot 1 lead. The lead is the first on the rope, and assumes heightened responsibilities, both technical ones (has to perform some special techniques, like installing snow anchors) and those related to a heightened exposure to terrain risks (typically the first to fall through crevaces...).
+  * A climber may change roped-party between climbs.
+  * if it helps to make the ER model, a climber may change roped-party within a climb (e.g. feature A with party 1, feature B with party 2).
+  * A climber may perform an ascent without being in a roped party
 
 * mountain: an elevated region of terrain to climb. 
   * climbers want to be able to search the routes by mountain, as a single mountain may have multiple ways to be climbed (routes). 
@@ -31,18 +33,24 @@ My notes include info about why certain features are included. This info should 
 
 * a route: a sequential combination of checkpoints and features. 
   * a route has exactly one objective: one of the checkpoints. e.g. a route may go from parking lot, and end at the "lake of the cloud". note that a "checkpoint" can be the objective in one route, but not the objective in another. E.g. another route may pass by the lake of the cloud to get to the summit. The summit is the objective here, not the lake. 
-  * A route happens on a mountain. Or multiple mountains?
+  * A route happens on a mountain. could be multiple mountains? (e.g. traverse) but at least one mountain.
 
-* post
+* an ascent is a successful completion of a route by a climber. 
+  * an ascent is completed on a specific day, at a specific time.
+  * it has a duration
+  * a climber may ascend a route more than once
+  * The ascent should record which roped party, if any, participated in the climb (i.e. was the climber part of a party as they made the ascent.)
 
+* post: a climber that completes an ascent can post about their experience to comment on conditions of the features. 
+  * a post can have as many attributes as you need to describe it, see https://www.mountainproject.com/route/105748657/the-yellow-spur for inspiration
+  * a post can have pictures of the ascent (optional)
+  * the conditions of the features can change over time.
+  * a climber can only post about an ascent if they have completed it.
+  * The post includes information about the condition of the route ascended.
+  * The post includes information about the condition of features within that route (optional, if we want more entities/relationships; I was a bit short as I wrote this)
+  * As it is important for climbers to keep track of the evolution of conditions, the past conditions of a route / features must be preserved. (this sounds trivial if the conditions are tied to the post or their own entity, not an attribute of the route / feature)
+  * Other climbers can comment on the post. Previous comments should be preserved. (optional, removing this removes entities if we need space, does not break anything)
 
-* checkpoint
-
-* a route is a specific, ordered succession of features and checkpoints, on a particular mountain.
-  * there may be multiple routes from 
-
-
-* no longer sure about the pertinence of groups because they prevent useful ER patterns. could be included with a bit of complexity.
 
 ### 
 
