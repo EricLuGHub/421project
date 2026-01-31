@@ -12,6 +12,8 @@ My notes include info about why certain features are included. This info should 
 
 * A climber is a generic user of the app. They ascend mountains, sometimes as part of a roped party, post about their climbs.
   * a climber can follow other climbers on the app to be notified of their new climbs
+  * a climber is uniquely identified by their email
+  * they have a name, address, age, nationality
 
 * a roped party is a combination of two or more climbers (typically at most 6, but nothing prevents more people) that connect themselves via an alpine rope. This is typically done for any travels across exposed terrain that requires protection (e.g. in case someone falls in a crevace) or assistance (e.g. rock climbing).
   * a roped party has at mot 1 lead. The lead is the first on the rope, and assumes heightened responsibilities, both technical ones (has to perform some special techniques, like installing snow anchors) and those related to a heightened exposure to terrain risks (typically the first to fall through crevaces...).
