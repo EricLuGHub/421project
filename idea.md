@@ -12,12 +12,23 @@ I've stripped some ideas to focus more on the "social network idea" from the ass
 
 very rough draft, please review it, -- i am quite unsure of the relationships
 
-Mountaineer Social Network
+## Mountaineer Social Network
+
+
+##### Assumptions:
+- a user can have multiple comments per post
+
+
+##### Add-ons:
+- chat service exclusive to Mountaineer that are at the location
+  - allows better information sharing about weather, temperature, any warnings, injuries and more
 
 
 
-a user can have multiple comments per post
 
+## Requirements
+
+- 
 
 
 
